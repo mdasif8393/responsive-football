@@ -4,13 +4,15 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* Navigation Bar Styles */
 .navbar-container{
     background-color:rgb(45, 37, 160);
     padding-top: 42px;
     display: flex;
     align-items: center;
     justify-content:space-around;
-
+    
 }
 .nav a{
     color: white;
@@ -18,7 +20,7 @@ body{
     margin-right: 36px;
 }
 
-/* Header Banner CSS Start*/
+/* Carousel Banner Styles*/
 .banner{
     background-color: rgb(45, 37, 160);
     height: 600px;
@@ -43,15 +45,13 @@ body{
     transition: width 3s, height 3s, transform 3s;
 
 }
-
 .banner  img:hover{
     width: 400px;
     height: 300px;
     transform: rotate(360deg);
 }
-/* Header Banner CSS END*/
 
-/* Players SHowcase */
+/* Players Showcases */
 .players-showcase{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -62,30 +62,16 @@ body{
     margin-bottom: 150px;
    
 }
-
-.button-decoration{
-    width: 168px;
-    text-decoration: none;
-    color: white;
-    border: none;
-    height: 44px;
-    background-color: #E02C6D;
+.players-showcase .single-player-info img{
+    width: 300px;
+    height: 256px;
 }
-
-/* Single player info */
 .single-player-info{
     width: 330px;
     height: 474px;
     padding: 15px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);    
 }
-.single-player-info img{
-    width: 300px;
-    height: 256px;
-}
-
-
 .single-player-info h3{
     font-size: 28px;
     font-weight: 700;
@@ -102,16 +88,23 @@ body{
     width: 300px;
     height: 154px;
 }
+.button-decoration{
+    width: 168px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    height: 44px;
+    background-color: #E02C6D;
+}
 
-/* Players Showcase END */
 
-
-/* Highlights Info Start  */
+/* Highlights Styles  */
 .highlights-container{
     display: flex;
     align-items: center;
     justify-content:space-around;
     margin-bottom: 100px;
+    
 }
 .highlights-container img{
     height: 427px;
@@ -127,12 +120,22 @@ body{
     
 }
 
-/* Extra Section   */
+/* Bonus Section Styles*/
+.extra-section-container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-bottom: 100px;
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
 #summery {
     border-collapse: collapse;
     width: 100%;
+
   }
-  
   #summery td, #summery th {
     border: 1px solid #ddd;
     padding: 8px;
@@ -150,16 +153,7 @@ body{
     color: white;
   }
 
-  /* Video */
-  .extra-section-container{
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content:space-evenly;
-      margin-bottom: 100px;
-  }
-
-/* Footer Start */
+/* Footer Styles */
 .footer-container{
     display: flex;
     flex-direction: column;
