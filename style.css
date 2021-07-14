@@ -4,27 +4,50 @@ body{
     margin: 0;
     padding: 0;
 }
+.navbar-container{
+    background-color:rgb(45, 37, 160);
+    padding-top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 36px;
+}
 
 /* Header Banner CSS Start*/
-#banner{
+.banner{
     background-color: rgb(45, 37, 160);
-    height: 650px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 153px;
-    padding-left: 156px;
-    padding-right: 141px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
 }
 .banner-info h1{
     color: #ffff;
     font-size: 64px;
     font-weight: bold;
     margin-bottom: 27px;
+    transition: transform 1s;
 }
-.banner-image img{
+.banner-info h1:hover{
+    transform: skew(5deg,5deg);
+}
+.banner  img{
     width: 556.01px;
     height: 438px;
+    transition: width 3s, height 3s, transform 3s;
 
+}
+
+.banner  img:hover{
+    width: 400px;
+    height: 300px;
+    transform: rotate(360deg);
 }
 /* Header Banner CSS END*/
 
@@ -33,15 +56,20 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 27px;
+    grid-column-gap: 30px;
     margin-top: 70px;
-    margin-left: 40px;
+    margin-left: 2.5%;
+    margin-bottom: 150px;
+   
 }
 
 .button-decoration{
     width: 168px;
+    text-decoration: none;
     color: white;
     border: none;
-    height: 44px;background-color: #E02C6D;
+    height: 44px;
+    background-color: #E02C6D;
 }
 
 /* Single player info */
@@ -56,6 +84,8 @@ body{
     width: 300px;
     height: 256px;
 }
+
+
 .single-player-info h3{
     font-size: 28px;
     font-weight: 700;
@@ -71,4 +101,83 @@ body{
     background-color: red;
     width: 300px;
     height: 154px;
+}
+
+/* Players Showcase END */
+
+
+/* Highlights Info Start  */
+.highlights-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom: 150px;
+}
+.highlights-container img{
+    height: 427px;
+    width: 567x;
+}
+.highlights-container h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #0A0826;
+}
+.highlights-container p{
+    color: #6c6c6c;
+    
+}
+
+/* Extra Section   */
+#summery {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #summery td, #summery th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #summery tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #summery tr:hover {background-color: #ddd;}
+  
+  #summery th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+/* Footer Start */
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container img{
+    width: 438.87px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+.social-media-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-decoration{
+    height:32px;
+    width:32px;
+    background-color: #d1d4dfa6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    margin-bottom: 20px;
+}
+.footer-container span{
+    margin-bottom: 63px;
 }
